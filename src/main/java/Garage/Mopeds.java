@@ -1,30 +1,26 @@
 package Garage;
 
-public class Mopeds extends Vehicle{
-	
-	public Mopeds(String type, String make, String name, int year) {
+public class Mopeds extends Vehicle {
+
+	public Mopeds(String type, String make, String name, int year, String accessibility) {
 		super(type, make, name, year);
+		_accessibility = accessibility;
 
 	}
-	private boolean _traffic;
-	private String _accessibility;	
-	
-	public String getaccessibility() { return _accessibility;}
-	
-	
-	
-	public void setaccessibility(String Make) { _accessibility = getaccessibility();}
 
+	private String _accessibility;
 
-
-	public boolean is_traffic() {
-		return _traffic;
+	public String getaccessibility() {
+		return _accessibility;
 	}
 
+	public void setaccessibility(String Make) {
+		_accessibility = getaccessibility();
+	}
 
-
-	public void set_byPass(boolean _traffic) {
-		this._traffic = _traffic;
+	@Override
+	public String toString() {
+		return "Mopeds [_accessibility=" + _accessibility + "]";
 	}
 
 }
