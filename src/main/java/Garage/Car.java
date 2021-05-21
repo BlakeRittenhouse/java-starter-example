@@ -12,7 +12,7 @@ public class Car extends Vehicle {
 
 	@Override
 	public String toString() {
-		return "Car [ seats=" + seats + "\s" + super.toString() + "]";
+		return "Car - seats=" + seats + "\s" + super.toString();
 	}
 
 
