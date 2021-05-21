@@ -2,34 +2,29 @@ package Garage;
 
 public class Mopeds extends Vehicle{
 	
-	public String price;
-	public boolean pleasure;
-	public String traffic;
-	public String looks;
-	
-	
-	public Mopeds(String price, boolean pleasure, String traffic, String looks) {
-		this.price = price;
-		this.pleasure = pleasure;
-		this.traffic = traffic;
-		this.looks = looks;		
+	public Mopeds(String type, String make, String name, int year) {
+		super(type, make, name, year);
+
 	}
+	private boolean _traffic;
+	private String _accessibility;	
 	
-	public void Type() {
-		System.out.println(this.price = "cheep");
-	}
+	public String getaccessibility() { return _accessibility;}
 	
-	public boolean HardRoad() {
-		return pleasure;
-	}
 	
-	public void String() {
-		System.out.println(this.traffic = "ignored");
-	}
-	public String ugly() {
-		return looks;
-		
-	}
 	
+	public void setaccessibility(String Make) { _accessibility = getaccessibility();}
+
+
+
+	public boolean is_traffic() {
+		return _traffic;
+	}
+
+
+
+	public void set_byPass(boolean _traffic) {
+		this._traffic = _traffic;
+	}
 
 }

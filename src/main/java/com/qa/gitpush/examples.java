@@ -1,18 +1,15 @@
 package com.qa.gitpush;
 
+import Garage.Car;
+
 public class examples {
 	
 	public static void main(String[] args) {
 		
-		System.out.println("App START");
+		Car Car = new Car("BMW", "sports", "M3", 2021);
 		
-		Person tony = new Person("tony", 32, "male", "Unwanteds");
-		
-		System.out.println(tony.speak("Hello!"));
-		
-		System.out.println(tony.read("Unwanteds"));
+		System.out.println(Car);
 				
-		System.out.println("APP END");		
 	}
 
 }

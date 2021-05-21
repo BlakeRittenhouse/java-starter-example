@@ -1,7 +1,7 @@
 package com.qa.gitpush;
 
 public class Person {
-	
+	//Attributes
 	public String name;
 	public float height;
 	public int age;
@@ -12,13 +12,14 @@ public class Person {
 	public int walkspeed = 30;
 	public String book;
 	
+	//constructor
 	public Person(String name, int age, String gender, String book) {
 		this.name = name;
 		this.age = age;
 		this.gender = gender;
 		this.book = book;
 	}
-	
+	//methods
 	public void read(Book x) {
 		System.out.println(this.name + "is reading the book titled: {given}");
 	}

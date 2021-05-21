@@ -2,33 +2,18 @@ package Garage;
 
 public class Motorcycle extends Vehicle {
 	
-	public String seats;
-	public String handlebars;
-	public boolean mufflers;
-	public int wheels;
-	
-	public Motorcycle (String seats, String handlebars, boolean mufflers, int wheels) {
-		this.seats = seats;
-		this.handlebars = handlebars;
-		this.mufflers = mufflers;
-		this.wheels = wheels;
+	public Motorcycle(String type, String make, String name, int year) {
+		super(type, make, name, year);
+
 	}
+	private String _gear;
+	private String _wheel;	
 	
-	public void Type() {
-		System.out.println(this.seats = "dual seating");
-	}
+	public String getgear() { return _gear;}
+	public String getwheel() { return _wheel;}
 	
-	public void String() {
-		System.out.println(this.handlebars = "beach bars");
-	}
 	
-	public boolean quiet() {
-		return mufflers;
-	}
-	
-	public int turning() {
-		return wheels;
-		
-	}
+	public void setgear(String Type) { _gear = getgear();}
+	public void setwheel(String Make) { _wheel = getwheel();}
 
 }
