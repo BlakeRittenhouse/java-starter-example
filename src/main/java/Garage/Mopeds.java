@@ -4,23 +4,15 @@ public class Mopeds extends Vehicle {
 
 	public Mopeds(String type, String make, String name, int year, String accessibility) {
 		super(type, make, name, year);
-		_accessibility = accessibility;
+		this.accessibility = accessibility;
 
 	}
 
-	private String _accessibility;
-
-	public String getaccessibility() {
-		return _accessibility;
-	}
-
-	public void setaccessibility(String Make) {
-		_accessibility = getaccessibility();
-	}
+	public String accessibility;
 
 	@Override
 	public String toString() {
-		return "Mopeds [_accessibility=" + _accessibility + "]";
+		return "Mopeds - accessibility = " + this.accessibility + super.toString();
 	}
 
 }

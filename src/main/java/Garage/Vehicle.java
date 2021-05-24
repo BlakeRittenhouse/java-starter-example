@@ -48,7 +48,7 @@ public class Vehicle {
 
 	@Override
 	public String toString() {
-		return " name=" + name + ", type=" + type + ", make=" + make + ", year=" + year + "";
+		return " name = " + name + ", type = " + type + ", make = " + make + ", year = " + year + "";
 	}
 
 }
